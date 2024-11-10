@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sinful Bites</title>
+    <link rel="shortcut icon" href="./Files/food_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('Files/about_bg.jpg') center/cover no-repeat;
+            color: rgb(0, 0, 0);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .section-content {
+            padding: 3rem 0;
+        }
+
+        .about-content {
+            text-align: center;
+            line-height: 1.8;
+            margin-top: -50px;
+        }
+
+        .about-content img {
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .founder-section {
+            margin-top: 3rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #d5bc4e, #90581d);
+            border-bottom: 2px solid #996868;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .resize {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-member-details:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            padding: 5px;
+        }
+
+        .team-member:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="scrollTopBtn" class="btn btn-primary">↑</button>
+    <script>
+        window.onscroll = function () { scrollFunction(); };
+        function scrollFunction() {
+            document.getElementById("scrollTopBtn").style.display = window.scrollY > 20 ? "block" : "none";
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <style>
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #d0c181;
+            border-radius: 10px;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Files/food_logo.png" alt="Logo"
+                    style="width: 30px; height: 30px; margin-right: 8px; border-radius: 10px;">Sinful Bites
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex ms-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search for dishes..." aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Featured</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>About Sinful Bites</h1>
+        <p>Serving Delicious, Sinful Delights Since 2015</p>
+    </header>
+
+    <section class="section-content">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Sinful Bites was born out of a love for food that brings people together. Since 2015, we've been
+                    dedicated to creating memorable experiences, offering a variety of indulgent dishes crafted with
+                    fresh ingredients and culinary passion. Every meal at Sinful Bites is designed to be a celebration
+                    of flavors.</p>
+                <img src="Files/kitchen.png" alt="Our Kitchen" class="my-4">
+                <p>Sinful Bites is where flavor meets indulgence! We are dedicated to serving up delicious, irresistible
+                    treats that satisfy every craving. From savory bites to decadent desserts, every dish is crafted
+                    with fresh ingredients and passion, ensuring quality and taste in each bite. Our menu is inspired by
+                    global flavors and a commitment to bringing comfort food to the next level. Whether you're in the
+                    mood for cheesy nachos, crispy fries, or our signature deep-fried Oreos, we have something for
+                    everyone. At Sinful Bites, we believe food should be enjoyed to the fullest—after all, life is too
+                    short for ordinary!</p>
+            </div>
+
+            <div class="founder-section">
+                <h3>Meet the Team</h3>
+                <p>Our chefs and team members work tirelessly to bring a smile to every guest. From our kitchen to
+                    your table, we aim to provide food that satisfies both the heart and the soul.</p>
+                <p>Join us for an experience that is as unique as the flavors we serve!</p><br>
+            </div>
+            <section class="team-section">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-4 team-member">
+                            <img src="Files/founder.png" class="resize" alt="Founder">
+                            <h4>Alex Johnson</h4>
+                            <p>Founder & Head Chef</p>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img src="Files/maria.png" class="resize" alt="Chef">
+                            <h4>Maria Chen</h4>
+                            <p>Pastry Chef</p>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img src="Files/david.png" class="resize" alt="Manager">
+                            <h4>David Kim</h4>
+                            <p>Operations Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container text-center mt-5">
+                    <h3>About Each Team Member</h3>
+                    <div class="row">
+                        <!-- Team Member 1 -->
+                        <div class="col-md-4 team-member-details">
+                            <img src="Files/lisa.png" alt="Marketing Specialist" class="resize">
+                            <h5>Lisa Roberts</h5>
+                            <p>Marketing Specialist</p>
+                            <p>Lisa is the mastermind behind our marketing strategies. With her creative ideas, she
+                                ensures that Sinful Bites reaches food lovers far and wide.</p>
+                        </div>
+
+                        <!-- Team Member 2 -->
+                        <div class="col-md-4 team-member-details">
+                            <img src="Files/michael.png" alt="Customer Relations Manager" class="resize">
+                            <h5>Michael Green</h5>
+                            <p>Customer Relations Manager</p>
+                            <p>Michael is dedicated to making sure every customer feels valued. His friendly demeanor
+                                and problem-solving skills are key to our customer satisfaction.</p>
+                        </div>
+
+                        <!-- Team Member 3 -->
+                        <div class="col-md-4 team-member-details">
+                            <img src="Files/sara.png" alt="Sous Chef" class="resize">
+                            <h5>Sara Lopez</h5>
+                            <p>Sous Chef</p>
+                            <p>Sara brings her expertise and passion for cooking to Sinful Bites, creating delicious
+                                meals that our customers love.</p>
+                        </div>
+
+                        <!-- Team Member 4 -->
+                        <div class="col-md-4 team-member-details">
+                            <img src="Files/tommy.png" alt="Dessert Specialist" class="resize">
+                            <h5>Tommy Rivers</h5>
+                            <p>Dessert Specialist</p>
+                            <p>Tommy has a knack for sweet creations. His desserts are a perfect ending to a Sinful
+                                Bites experience, bringing smiles to our customers’ faces.</p>
+                        </div>
+
+                        <!-- Team Member 5 -->
+                        <div class="col-md-4 team-member-details">
+                            <img src="Files/emily.png" alt="Supply Chain Coordinator" class="resize">
+                            <h5>Emily Carter</h5>
+                            <p>Supply Chain Coordinator</p>
+                            <p>Emily ensures we always have the finest ingredients. Her hard work behind the scenes
+                                keeps our kitchen running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2024 Sinful Bites. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
