@@ -48,27 +48,21 @@
             transform: scale(1.05);
         }
 
-        footer {
-            background-color: #2d2c2c;
-            color: #eee;
-        }
-
-        .social-icons a {
-            color: #d5bc4e;
-            margin: 0 8px;
-            font-size: 1.2rem;
-        }
-
         html {
             scroll-behavior: smooth;
         }
 
-        .blockquote:hover {
-            transform: scale(1.02);
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            padding: 10px;
+        .blockquote {
+            border: 2px solid #d5bc4e;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            height: 200px;
+            width: 400px;
         }
+
     </style>
 </head>
 
@@ -84,10 +78,6 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <form class="d-flex ms-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search for dishes..." aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -164,7 +154,7 @@
             </div>
         </div>
     </section>
-    <!-- Recipe of the Day -->
+
     <section id="featured" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Recipe of the day</h2>
@@ -334,14 +324,9 @@
         </div>
     </section>
 
-    <footer class="py-4">
+    <footer class="bg-dark text-light py-4">
         <div class="container text-center">
-            <p>&copy; 2024 Sinful Bites. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
+            <p class="mb-2">&copy; 2024 Sinful Bites. All rights reserved.</p>
         </div>
     </footer>
 

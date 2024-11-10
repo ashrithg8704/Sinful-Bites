@@ -50,19 +50,22 @@
             height: 250px;
             object-fit: cover;
         }
-
-        .team-member-details:hover {
-            transform: scale(1.02);
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
+        .team-member-details {
             padding: 5px;
+            margin-bottom: 15px;
+        }
+        .team-member {
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        .team-member-details:hover {
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
         .team-member:hover {
-            transform: scale(1.02);
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
-            padding: 5px;
         }
     </style>
 </head>
@@ -99,10 +102,6 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <form class="d-flex ms-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search for dishes..." aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -170,7 +169,6 @@
                 <div class="container text-center mt-5">
                     <h3>About Each Team Member</h3>
                     <div class="row">
-                        <!-- Team Member 1 -->
                         <div class="col-md-4 team-member-details">
                             <img src="Files/lisa.png" alt="Marketing Specialist" class="resize">
                             <h5>Lisa Roberts</h5>
@@ -179,7 +177,6 @@
                                 ensures that Sinful Bites reaches food lovers far and wide.</p>
                         </div>
 
-                        <!-- Team Member 2 -->
                         <div class="col-md-4 team-member-details">
                             <img src="Files/michael.png" alt="Customer Relations Manager" class="resize">
                             <h5>Michael Green</h5>
@@ -188,7 +185,6 @@
                                 and problem-solving skills are key to our customer satisfaction.</p>
                         </div>
 
-                        <!-- Team Member 3 -->
                         <div class="col-md-4 team-member-details">
                             <img src="Files/sara.png" alt="Sous Chef" class="resize">
                             <h5>Sara Lopez</h5>
@@ -197,7 +193,6 @@
                                 meals that our customers love.</p>
                         </div>
 
-                        <!-- Team Member 4 -->
                         <div class="col-md-4 team-member-details">
                             <img src="Files/tommy.png" alt="Dessert Specialist" class="resize">
                             <h5>Tommy Rivers</h5>
@@ -206,7 +201,6 @@
                                 Bites experience, bringing smiles to our customers’ faces.</p>
                         </div>
 
-                        <!-- Team Member 5 -->
                         <div class="col-md-4 team-member-details">
                             <img src="Files/emily.png" alt="Supply Chain Coordinator" class="resize">
                             <h5>Emily Carter</h5>
@@ -221,8 +215,10 @@
         </div>
     </section>
 
-    <footer class="py-4 bg-dark text-white text-center">
-        <p>&copy; 2024 Sinful Bites. All Rights Reserved.</p>
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 Sinful Bites. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
